@@ -1,0 +1,2 @@
+# Some examples using some Python time libraries
+You can visit the time complexity video on my channel in the <a href= "https://youtube.com/playlist?list=PLTwy92rWKPiEttkiQiUvOv8CSq4GQdL3R">In class this week playlist.</a>
