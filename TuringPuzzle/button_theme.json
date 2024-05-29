@@ -1,0 +1,39 @@
+{
+
+     "@control_button":
+
+     {
+
+          "images":
+
+         {
+
+             "normal_image": {
+
+                 "path": "step.jpg"
+
+             },
+             "hovered_image": {
+
+                  "path": "step.jpg"
+
+             },
+
+             "selected_image": {
+
+                 "path": "step.jpg"
+
+             },
+
+             "disabled_image": {
+
+                  "path": "step.jpg"
+
+             }
+
+         }
+
+     }
+
+ }
+
