@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glady West Quiz</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='quiz.css') }}"/> 
+</head>
+<form method="POST">
+<div class="question"
+    <p>What was Gladys West's most significant contribution to GPS technology?</p>
+	<p>
+
+    <input type="radio" name="answer" value="A" id="answerA" {% if selected == "A" %}checked{% endif %}>
+    <label for="answerA">A. She developed the first GPS satellite.</label><br>
+
+    <input type="radio" name="answer" value="B" id="answerB" {% if selected == "B" %}checked{% endif %}>
+    <label for="answerB">B. She modeled the shape of the Earth with great accuracy.</label><br>
+
+    <input type="radio" name="answer" value="C" id="answerC" {% if selected == "C" %}checked{% endif %}>
+    <label for="answerC">C. She invented the atomic clock used in GPS satellites.</label><br>
+
+    <input type="radio" name="answer" value="D" id="answerD" {% if selected == "D" %}checked{% endif %}>
+    <label for="answerD">D. She designed the user interface for early GPS receivers.</label><br>
+	</p>
+    <button type="submit">Submit</button>
+	</div>
+</form>
+
+{% if response %}
+<p id="response">{{ response }}<br />
+{% if selected == "B" %}
+<a href="{{url_for('question2')}}">Next question</a>
+{% endif %}
+</p>
+{% endif %}
