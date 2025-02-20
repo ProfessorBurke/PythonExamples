@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Walking Tour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Custom Walking Tour</h1>
+	<form method="post">
+		<label>Location: <input type="text" name="location" value="{{ location }}"></label>
+		<button type="submit">Update Map</button>
+	</form>
+
+	<p name="message">{{ message }}</p>
+
+	<!-- Folium Map -->
+	{{ map_html | safe }}
+
+</body>
+</html>

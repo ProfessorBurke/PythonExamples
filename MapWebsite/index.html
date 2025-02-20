@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Walking Tour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Custom Walking Tour</h1>
+	<form method="post">
+		<label>Location: <input type="text" name="location" value="{{ location }}"></label>
+		<button type="submit">Update Map</button>
+	</form>
+
+	<p name="message">{{ message }}</p>
+	<p name="instructions">{{ instructions }}</p>
+	<p id="route">{{ route }}</p>
+
+	<!-- Button to trigger distance calculation -->
+	<button id="calcRoute">Calculate Route Distance</button>
+
+	<!-- Folium Map -->
+	{{ map_html | safe }}
+
+	<script>
+	document.getElementById("calcRoute").addEventListener("click", function() {
+	    console.log("In click for Calculate Route button.");
+		fetch("/calculate_route")
+			.then(response => response.json())
+			.then(data => {
+				console.log("Full JSON response:", data);
+				if (!data.hasOwnProperty("route")) {
+					console.error("Error: 'route' key not found in JSON response.");
+				}
+				document.getElementById("route").innerText = data.route || "Error: No route found.";
+			})
+		.catch(error => console.error("Error fetching route:", error));
+
+	});
+	</script>
+</body>
+</html>
+
+
+
+
+<!--
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Walking Tour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Custom Walking Tour</h1>
+    <form method="post">
+        <label>Location: <input type="text" name="location" value="{{ location }}"></label>
+        <button type="submit">Update Map</button>
+    </form>
+	<p name="message">{{ message }}</p>
+	<p name ="instructions">{{ instructions }}</p>
+	<p name="route">{{ route }}</p>
+	{{ map_html | safe }}
+</body>
+</html>
+
+-->
