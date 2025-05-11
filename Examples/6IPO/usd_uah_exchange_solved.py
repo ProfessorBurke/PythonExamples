@@ -29,7 +29,6 @@ cost_bread = float(input("What is the cost of a loaf of bread (UAH)? "))
 donation_uah = donation_usd * exchange_rate
 
 # Calculate the amount of bread that can be purchased.
-# Round down to a whole number.
 loaves_bread = donation_uah / cost_bread
 
 # Display the result.
