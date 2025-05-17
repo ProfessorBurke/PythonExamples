@@ -32,8 +32,8 @@
 """
 # Annotate variables.
 day: str
-time: int
-status_message: str = ""
+hour: int
+status_message: str
 
 # Obtain the appointment the user wants to make.
 day = input("What is the day for the desired appointment? ")
