@@ -1,0 +1,17 @@
+Bahamas,BHS,2024,46.19
+Bahrain,BHR,2024,30.77
+Bangladesh,BGD,2024,23.25
+Barbados,BRB,2024,54.76
+Belarus,BLR,2024,40.46
+Belgium,BEL,2024,87.05
+Belize,BLZ,2024,55
+Benin,BEN,2024,43.81
+Bhutan,BTN,2024,53.33
+Bolivia,BOL,2024,83.64
+Bosnia and Herzegovina,BIH,2024,63.33
+Botswana,BWA,2024,61.91
+Brazil,BRA,2024,97.96
+Brunei,BRN,2024,6.83
+Bulgaria,BGR,2024,55.46
+Burkina Faso,BFA,2024,52.22
+Burundi,BDI,2024,10.24

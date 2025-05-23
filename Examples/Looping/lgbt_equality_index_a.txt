@@ -1,0 +1,13 @@
+Afghanistan,AFG,2024,0
+Africa,,2024,20.723385
+Albania,ALB,2024,62.27
+Algeria,DZA,2024,3.42
+Andorra,AND,2024,85.71
+Angola,AGO,2024,66.19
+Antigua and Barbuda,ATG,2024,84.21
+Argentina,ARG,2024,87.17
+Armenia,ARM,2024,47.73
+Asia,,2024,48.20449
+Australia,AUS,2024,89.65
+Austria,AUT,2024,92.96
+Azerbaijan,AZE,2024,48.18

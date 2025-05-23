@@ -1,0 +1,17 @@
+Cambodia,KHM,2024,53.89
+Cameroon,CMR,2024,5.5
+Canada,CAN,2024,95.46
+Cape Verde,CPV,2024,51.22
+Central African Republic,CAF,2024,31.67
+Chad,TCD,2024,18.05
+Chile,CHL,2024,100
+China,CHN,2024,51
+Colombia,COL,2024,94.55
+Comoros,COM,2024,15.39
+Congo,COG,2024,43.81
+Costa Rica,CRI,2024,83.33
+Cote d'Ivoire,CIV,2024,33.16
+Croatia,HRV,2024,81.36
+Cuba,CUB,2024,80.91
+Cyprus,CYP,2024,80
+Czechia,CZE,2024,71.25

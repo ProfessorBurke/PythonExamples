@@ -1,0 +1,75 @@
+Agricultural tech
+2017
+413050561
+Agricultural tech
+2018
+276319067
+Agricultural tech
+2019
+453040870
+Agricultural tech
+2020
+674825903
+Agricultural tech
+2021
+1428772088
+Audiovisual
+2017
+1112648713
+Audiovisual
+2018
+3729205073
+Audiovisual
+2019
+2800363095
+Audiovisual
+2020
+3559200335
+Audiovisual
+2021
+8094824175
+Augmented reality/virtual reality
+2017
+280579339
+Augmented reality/virtual reality
+2018
+364987148
+Augmented reality/virtual reality
+2019
+2170410532
+Augmented reality/virtual reality
+2020
+578424966
+Augmented reality/virtual reality
+2021
+1264948880
+Cybersecurity data protection
+2017
+677722089
+Cybersecurity data protection
+2018
+1259591338
+Cybersecurity data protection
+2019
+1210940293
+Cybersecurity data protection
+2020
+1817048861
+Cybersecurity data protection
+2021
+2645209666
+Data management processing cloud
+2017
+2560222567
+Data management processing cloud
+2018
+3165071484
+Data management processing cloud
+2019
+5091212853
+Data management processing cloud
+2020
+4907993211
+Data management processing cloud
+2021
+12167417279
