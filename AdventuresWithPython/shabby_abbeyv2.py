@@ -1,6 +1,6 @@
 """
     Shabby Abbey v2
-    Obtain a command from the player and manipulate it.
+    Obtain a command from the player and move them based on the command.
     Maggie
     9/23/2025
 """
@@ -36,4 +36,5 @@ else:
     print("I didn't understand that command.")
 
 print("Thank you for playing.")
+
 
