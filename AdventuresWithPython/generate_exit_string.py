@@ -51,7 +51,7 @@ while test_num < len(abbey):
     location: int = test_num
     exits_list: list[int] = abbey[location][3:]
 
-    exits: str = []
+    exits: list[str] = []
     i = 0
     while i < len(exits_list):
         if exits_list[i] != -1:
@@ -80,3 +80,4 @@ while test_num < len(abbey):
 
 
     
+
