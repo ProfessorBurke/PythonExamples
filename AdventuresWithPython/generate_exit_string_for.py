@@ -50,7 +50,7 @@ for test_num in range(len(abbey)):
     location: int = test_num
     exits_list: list[int] = abbey[location][3:]
 
-    exits: str = [directions_string[i] for i in range(len(exits_list))
+    exits: list[str] = [directions_string[i] for i in range(len(exits_list))
                   if exits_list[i] != -1]
 
     if len(exits) == 0:
@@ -68,3 +68,4 @@ for test_num in range(len(abbey)):
 
 
     
+
