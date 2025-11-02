@@ -1,0 +1,69 @@
+{
+  "current_location": 0,
+  "player_inventory": {},
+  "dungeon": [
+    {
+      "name": "cloister",
+      "description": "You are in a courtyard.",
+      "exits": {
+        "N": 1,
+        "S": 2,
+        "E": 3,
+        "W": 4
+      },
+      "visits": 0,
+      "inventory": {}
+    },
+    {
+      "name": "church",
+      "description": "In front of you is a large stone church.",
+      "exits": {
+        "S": 0
+      },
+      "visits": 0,
+      "inventory": {
+        "book": "An ancient book with a decorative leather cover."
+      }
+    },
+    {
+      "name": "kitchen",
+      "description": "Kitchen or torture chamber?",
+      "exits": {
+        "N": 0
+      },
+      "visits": 0,
+      "inventory": {
+        "knife": "A rusty knife with an engraved handle.",
+        "skull": "A tiny rat skull on a silver chain."
+      }
+    },
+    {
+      "name": "library",
+      "description": "A monastic library.",
+      "exits": {
+        "N": 5,
+        "W": 0
+      },
+      "visits": 0,
+      "inventory": {}
+    },
+    {
+      "name": "garden",
+      "description": "An overgrown garden.",
+      "exits": {
+        "E": 0
+      },
+      "visits": 0,
+      "inventory": {}
+    },
+    {
+      "name": "storage room",
+      "description": "Artifacts, old manuscripts, and dust.",
+      "exits": {
+        "S": 3
+      },
+      "visits": 0,
+      "inventory": {}
+    }
+  ]
+}
