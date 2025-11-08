@@ -67,7 +67,7 @@ def inventory_swap(from_inventory: dict[str,str], to_inventory: dict[str, str],
     else:
         print("I don't see " + item + ".")
 
-def save_abbey(abbey: list[dict[str, object]], file_name: str) -> bool:
+def save_abbey(abbey: dict[str, object], file_name: str) -> bool:
     """Save the abbey dungeon to the file file_name and return True if
        successful, and False otherwise."""
     f: typing.TextIO
@@ -202,3 +202,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
