@@ -104,7 +104,7 @@ def load_abbey(file_name: str) -> dict[str, object]:
     inventory: Inventory
     f: typing.TextIO
     abbey = {"current_location": 0,
-             "player_inventory": {},
+             "player_inventory": Inventory(),
              "dungeon": [{"name": "dark room",
                           "description": "You are in a dark room with no exits.  Best go home.",
                           "exits": {},
@@ -224,3 +224,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
