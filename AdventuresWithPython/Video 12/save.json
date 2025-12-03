@@ -1,0 +1,78 @@
+{
+    "player_inventory": {},
+    "dungeon": [
+        {
+            "exits": {
+                "N": "church",
+                "S": "kitchen",
+                "E": "library",
+                "W": "garden"
+            },
+            "name": "cloister",
+            "description": "You are in a courtyard.",
+            "visits": 4,
+            "inventory": {}
+        },
+        {
+            "exits": {
+                "S": "cloister"
+            },
+            "name": "church",
+            "description": "In front of you is a large stone church.",
+            "visits": 1,
+            "inventory": {}
+        },
+        {
+            "exits": {
+                "N": "cloister"
+            },
+            "name": "kitchen",
+            "description": "Kitchen or torture chamber?",
+            "visits": 1,
+            "inventory": {
+                "skull": {
+                    "name": "skull",
+                    "description": "A tiny rat skull on a silver chain."
+                },
+                "book": {
+                    "name": "book",
+                    "description": "An ancient book with a decorative leather cover."
+                }
+            }
+        },
+        {
+            "exits": {
+                "N": "storage room",
+                "W": "cloister"
+            },
+            "name": "library",
+            "description": "A monastic library.",
+            "visits": 2,
+            "inventory": {}
+        },
+        {
+            "exits": {
+                "E": "cloister"
+            },
+            "name": "garden",
+            "description": "An overgrown garden.",
+            "visits": 1,
+            "inventory": {}
+        },
+        {
+            "exits": {
+                "S": "library"
+            },
+            "name": "storage room",
+            "description": "Artifacts, old manuscripts, and dust.",
+            "visits": 1,
+            "inventory": {
+                "knife": {
+                    "name": "knife",
+                    "description": "A rusty knife with an engraved handle."
+                }
+            }
+        }
+    ],
+    "current_location": "cloister"
+}

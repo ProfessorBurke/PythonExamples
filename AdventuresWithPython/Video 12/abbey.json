@@ -1,0 +1,70 @@
+{
+  "current_location": "cloister",
+  "player_inventory": {},
+  "dungeon": [
+    {
+      "name": "cloister",
+      "description": "You are in a courtyard.",
+      "exits": {
+        "N": "church",
+        "S": "kitchen",
+        "E": "library",
+        "W": "garden"
+      },
+      "visits": 0,
+      "inventory": {}
+    },
+    {
+      "name": "church",
+      "description": "In front of you is a large stone church.",
+      "exits": {
+        "S": "cloister"
+      },
+      "visits": 0,
+      "inventory": {
+        "book": {"name": "book",
+		"description": "An ancient book with a decorative leather cover."}
+      }
+    },
+    {
+      "name": "kitchen",
+      "description": "Kitchen or torture chamber?",
+      "exits": {
+        "N": "cloister"
+      },
+      "visits": 0,
+      "inventory": {
+        "knife": {"name": "knife", "description": "A rusty knife with an engraved handle."},
+        "skull": {"name": "skull", "description": "A tiny rat skull on a silver chain."}
+      }
+    },
+    {
+      "name": "library",
+      "description": "A monastic library.",
+      "exits": {
+        "N": "storage room",
+        "W": "cloister"
+      },
+      "visits": 0,
+      "inventory": {}
+    },
+    {
+      "name": "garden",
+      "description": "An overgrown garden.",
+      "exits": {
+        "E": "cloister"
+      },
+      "visits": 0,
+      "inventory": {}
+    },
+    {
+      "name": "storage room",
+      "description": "Artifacts, old manuscripts, and dust.",
+      "exits": {
+        "S": "library"
+      },
+      "visits": 0,
+      "inventory": {}
+    }
+  ]
+}
