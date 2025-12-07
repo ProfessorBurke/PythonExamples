@@ -1,0 +1,109 @@
+{
+  "current_location": "cloister",
+  "player_inventory": {},
+  "location_lookup": {
+	  "cloister":
+		{
+		  "name": "cloister",
+		  "description": "You are in a courtyard.",
+		  "exits": {
+			"N": {"name": "cloistertochurchdoor",
+				  "location": "church",
+                  "description": "A sturdy-looking door with a diamond-shaped stained glass window.",
+                  "state_descriptions": {"locked": "The door appears to be locked.",
+                                         "blocked": "There is a pile of rubble in front of the door."},
+                  "state": ["locked", "blocked"],
+				  "dysfunctional_states": ["locked", "blocked"],
+                  "state_changes": {
+                                "unlock" : {"state": "locked",
+                                            "success_str": "There is a click and the door swings open.",
+                                            "fail_str": "The door isn't locked."},
+                                "unblock" : {"state": "blocked",
+                                             "success_str": "You've cleared the rubble from the front of the door.",
+			                                 "fail_str": "This door isn't blocked."}}
+			},
+			"S": {"location": "kitchen", "description": "", "state_descriptions": {}, "state": [], "state_changes": {}, "name": "cloistertokitchendoor", "dysfunctional_states": ["locked", "blocked"]},
+			"E": {"location": "library", "description": "", "state_descriptions": {}, "state": [], "state_changes": {}, "name": "cloistertolibrarydoor", "dysfunctional_states": ["locked", "blocked"] },
+			"W": {"location": "garden", "description": "", "state_descriptions": {}, "state": [], "state_changes": {} , "name": "cloistertogardendoor", "dysfunctional_states": ["locked", "blocked"]}
+		  },
+		  "visits": 0,
+		  "inventory": {}
+		},
+	  "church":
+		{
+		  "name": "church",
+		  "description": "In front of you is a large stone church.",
+		  "exits": {
+			"S": {"location": "cloister", "description": "", "state_descriptions": {}, "state": [], "state_changes": {}, "name": "churchtocloisterdoor", "dysfunctional_states": ["locked", "blocked"]}
+		  },
+		  "visits": 0,
+		  "inventory": {
+			"book": {"name": "book", "action": "", "object": "",
+			"description": "An ancient book with a decorative leather cover."}
+		  }
+		},
+	  "kitchen":
+		{
+		  "name": "kitchen",
+		  "description": "Kitchen or torture chamber?",
+		  "exits": {
+			"N": {"location": "cloister", "description": "", "state_descriptions": {}, "state": [], "state_changes": {}, "name": "kitchentocloisterdoor", "dysfunctional_states": ["locked", "blocked"]}
+		  },
+		  "visits": 0,
+		  "inventory": {
+			"rag": {"name": "rag", "action": "reveal", "object": "librarytostoreroomdoor",
+			"description": "An oily rag."},
+			"knife": {"name": "knife", "action": "", "object": "",
+			"description": "A rusty knife with an engraved handle."},
+			"skull": {"name": "skull", "action": "", "object": "",
+			"description": "A tiny rat skull on a silver chain."}
+		  }
+		},
+	  "library":
+		{
+		  "name": "library",
+		  "description": "A monastic library.",
+		  "exits": {
+			"N": {"location": "storage room", 
+			"description": "There's a placard hanging on the door, but it's blank.", "state_descriptions": {}, "state": ["invisible_writing"], 
+			"state_changes": {"reveal" : {"state": "invisible_writing",
+                                            "success_str": "Wiping the placard reveals an invisible message, '0 days since last accident.' As you ponder the meaning of the message, it vanishes, and no amount of wiping brings it back.",
+                                            "fail_str": "No amount of wiping brings the message back."}
+											}, 
+											"name": "librarytostoreroomdoor", "dysfunctional_states": ["locked", "blocked"]},
+			"W": {"location": "cloister", "description": "", "state_descriptions": {}, "state": [], "state_changes": {}, "name": "librarytocloisterdoor", "dysfunctional_states": ["locked", "blocked"]}
+		  },
+		  "visits": 0,
+		  "inventory": {
+			  "key": {"name": "key", "action": "unlock", "object": "",
+			  "description": "A small key with an intricate bow."}
+			  }
+		},
+	  "garden":
+		{
+		  "name": "garden",
+		  "description": "An overgrown garden.",
+		  "exits": {
+			"E": {"location": "cloister", "description": "", "state_descriptions": {}, "state": [], "state_changes": {}, "name": "gardentocloisterdoor", "dysfunctional_states": ["locked", "blocked"]}
+		  },
+		  "visits": 0,
+		  "inventory": {
+			  "shovel": {"name": "shovel", "action": "unblock", "object": "cloistertochurchdoor",
+			  "description": "A sturdy garden shovel with a long wooden handle."}}
+		},
+	  "storage room":
+		{
+		  "name": "storage room",
+		  "description": "Artifacts, old manuscripts, and dust.",
+		  "exits": {
+		   "S": {"location": "library", "description": "", "state_descriptions": {}, "state": [], "state_changes": {}, "name": "storeroomtolibrarydoor", "dysfunctional_states": ["locked", "blocked"]}
+		  },
+		  "visits": 0,
+		  "inventory": {
+			  "latchkey": {"name": "latchkey", "action": "unlock", "object": "cloistertochurchdoor",
+			  "description": "A large iron key."}
+		  }
+		}
+  }
+}
+
